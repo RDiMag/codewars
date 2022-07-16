@@ -65,16 +65,10 @@ function hero(bullets, dragons){
 // Mind the input validation.
 
 function sumArray(array) {
-  if (!Array.isArray(array) || !array.length) {
-   return 0;
-} else {
-  array.sort(comparefunction);
-  array.pop();
-  array.shift();
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-  }
-  return sum;
-  }
+ try{
+  return array.sort((low, high) => low-high).slice(1, -1).reduce((low, high) => low + high);
+ }
+ catch (err) {
+  return 0;
+ }
 }
