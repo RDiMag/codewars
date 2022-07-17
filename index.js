@@ -82,3 +82,17 @@ function even_or_odd(number) {
     return "Odd"
   }
 }
+
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+function makeNegative(num) {
+  let x = Math.sign(num);
+  if (x === -1) {
+    return num;
+  } else {
+    return -Math.abs(num)
+  }
+}
+
+// I used Math.sign to determine if the input number is negative or positive. If negative, it is returned as-is. If positive, it uses the -Math.abs
+// method to return a negative number.
