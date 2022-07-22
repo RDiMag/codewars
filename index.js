@@ -106,3 +106,11 @@ function paperwork(n, m) {
     return (m * n);
   }
 }
+
+// Simple, remove the spaces from the string, then return the resultant string.
+
+
+function noSpace(x){
+  let a = x.replace(/\s/g, '');
+  return a;
+}
