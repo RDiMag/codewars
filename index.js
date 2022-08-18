@@ -179,3 +179,14 @@ function abbrevName(name){
   let nameArray = name.split(' ');
   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 };
+
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// Return your answer as a number.
+
+
+function sumMix(x){
+  let nums = x.map(function(str) {
+    return parseInt(str)
+  });
+  return nums.reduce((partialSum, a) => partialSum + a);
+}
