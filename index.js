@@ -13,7 +13,7 @@
 
 function enough(cap, on, wait) {
   let num = (cap - on);
-  if (wait <= num){
+  if (wait <= num) {
     return 0;
   } else if (wait > num) {
     return wait - num;
@@ -38,7 +38,7 @@ function capitalizeWord(word) {
 // Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
 
 function isDivisible(n, x, y) {
-  return (n % x === 0) && (n % y === 0) 
+  return (n % x === 0) && (n % y === 0)
 }
 
 // A hero is on his way to the castle to complete his mission. 
@@ -50,14 +50,14 @@ function isDivisible(n, x, y) {
 // Return True if yes, False otherwise :)
 // Fundamentals
 
-function hero(bullets, dragons){
+function hero(bullets, dragons) {
   if (bullets >= dragons * 2) {
     return true;
   } else {
     return false;
   }
 }
-  
+
 // Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
 
 // The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
@@ -65,12 +65,12 @@ function hero(bullets, dragons){
 // Mind the input validation.
 
 function sumArray(array) {
- try{
-  return array.sort((low, high) => low-high).slice(1, -1).reduce((low, high) => low + high);
- }
- catch (err) {
-  return 0;
- }
+  try {
+    return array.sort((low, high) => low - high).slice(1, -1).reduce((low, high) => low + high);
+  }
+  catch (err) {
+    return 0;
+  }
 }
 
 // 
@@ -110,7 +110,7 @@ function paperwork(n, m) {
 // Simple, remove the spaces from the string, then return the resultant string.
 
 
-function noSpace(x){
+function noSpace(x) {
   let a = x.replace(/\s/g, '');
   return a;
 }
@@ -136,13 +136,13 @@ const quarterOf = (month) => {
   } else if (month <= 12) {
     return 4
   }
-  
+
 }
 
 // Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
 
-function boolToWord( bool ){
-  if(bool === true){
+function boolToWord(bool) {
+  if (bool === true) {
     return "Yes"
   } else if (bool === false) {
     return "No"
@@ -159,23 +159,23 @@ function bonusTime(salary, bonus) {
   if (bonus === true) {
     salary = salary * 10;
   }
-  return '\u00a3'+ salary.toString();
+  return '\u00a3' + salary.toString();
 }
 
 // Your goal is to create a function that removes the first and last characters of a string. 
 //You're given one parameter, the original string. 
 //You don't have to worry with strings with less than two characters.
 
-function removeChar(str){
+function removeChar(str) {
   let result = str.slice(1, -1)
   return result;
- };
+};
 
 // Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
 
 // The output should be two capital letters with a dot separating them.
 
-function abbrevName(name){
+function abbrevName(name) {
   let nameArray = name.split(' ');
   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 };
@@ -184,8 +184,8 @@ function abbrevName(name){
 // Return your answer as a number.
 
 
-function sumMix(x){
-  let nums = x.map(function(str) {
+function sumMix(x) {
+  let nums = x.map(function (str) {
     return parseInt(str)
   });
   return nums.reduce((partialSum, a) => partialSum + a);
@@ -210,4 +210,15 @@ function check(a, x) {
   if (a.includes(x)) {
     return true;
   } else return false;
+}
+
+// Write a function to split a string and convert it into an array of words.
+
+function stringToArray(string) {
+  return string.split(' ');
+}
+
+// Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+function repeatStr (n, s) {
+  return s.repeat(n);
 }
