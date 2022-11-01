@@ -222,3 +222,16 @@ function stringToArray(string) {
 function repeatStr (n, s) {
   return s.repeat(n);
 }
+
+//Given a number n, return the number of positive odd numbers below n, EASY!
+
+function oddCount(n){
+  // your code here
+  console.log(n)
+  var result = 0
+  result = Math.floor(n/2) 
+  //This works because Math.floor always rounds down to the largest integer equal or less than the given value. 
+  //Divided by 2, this results in the number of odd numbers below the given value. 6/2 = 3 (odd #s 1, 3, 5) 5/2 = 2 (odd #s 1, 3) 
+  return result
+}
+
