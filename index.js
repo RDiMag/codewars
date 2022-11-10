@@ -269,3 +269,9 @@ function lovefunc(flower1, flower2){
   }else return true;
   // moment of truth
 }
+
+function getAge(inputString){
+// return the age as an integer.
+  let n = (inputString).charAt(0);
+  return Math.floor(n);
+}
