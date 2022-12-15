@@ -297,3 +297,13 @@ function invert(array) {
 function saleHotdogs(n){
   return n < 5 ? n*100 : n>= 5 && n<10 ? n*95 : n*90
 }
+
+//find sum of all numbers from 1 to n
+
+var summation = function (num) {
+  let sum = 0;
+  for (let i = 0; i <= num; i++){
+    sum += i;
+  }
+  return sum;
+}
