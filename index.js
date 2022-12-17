@@ -307,3 +307,7 @@ var summation = function (num) {
   }
   return sum;
 }
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/gi, '');
+}
