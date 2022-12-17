@@ -311,3 +311,13 @@ var summation = function (num) {
 function removeExclamationMarks(s) {
   return s.replace(/!/gi, '');
 }
+
+var min = function(list){
+  let minVal = Math.min(...list);
+return minVal;
+}
+
+var max = function(list){
+  let maxVal = Math.max(...list)
+  return maxVal;
+}
