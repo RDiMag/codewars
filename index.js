@@ -321,3 +321,10 @@ var max = function(list){
   let maxVal = Math.max(...list)
   return maxVal;
 }
+
+//debug
+function mystery() {
+  var results =
+    {sanity: 'Hello'};
+  return results;
+}
