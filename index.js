@@ -328,3 +328,9 @@ function mystery() {
     {sanity: 'Hello'};
   return results;
 }
+
+//function to square argument
+
+function square(n){
+  return n*n;
+}
