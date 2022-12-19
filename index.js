@@ -334,3 +334,12 @@ function mystery() {
 function square(n){
   return n*n;
 }
+
+//function to break up camel case
+function solution(string) {
+  return string.replace(/([A-Z])/g, ' $1');
+}
+//() in Regex let us match a value and save it. These are capturing parenthesis.
+//[A-Z]/g is to search for characters A-Z and g is the global identifier - finds all matches not just the first.
+//$1 is used to access the captured value.
+//the ' ' ensures a space is added.
