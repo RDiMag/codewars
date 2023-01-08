@@ -251,27 +251,27 @@ const stringToNumber = function (str) {
 
 function areYouPlayingBanjo(name) {
   // Implement me
-  if(name.charAt(0) === 'r' || name.charAt(0) === 'R'){
+  if (name.charAt(0) === 'r' || name.charAt(0) === 'R') {
     return name + " plays banjo";
   } else
-  return name + " does not play banjo";
+    return name + " does not play banjo";
 }
 
 // If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
 
 // Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 
-function lovefunc(flower1, flower2){
-  if(flower1 % 2 == 0 && flower2 % 2 == 0){
+function lovefunc(flower1, flower2) {
+  if (flower1 % 2 == 0 && flower2 % 2 == 0) {
     return false
-  } else if (flower1 % 2 !== 0 && flower2 % 2 !== 0){
+  } else if (flower1 % 2 !== 0 && flower2 % 2 !== 0) {
     return false
-  }else return true;
+  } else return true;
   // moment of truth
 }
 
-function getAge(inputString){
-// return the age as an integer.
+function getAge(inputString) {
+  // return the age as an integer.
   let n = (inputString).charAt(0);
   return Math.floor(n);
 }
@@ -279,30 +279,30 @@ function getAge(inputString){
 function invert(array) {
   let invert = [];
   for (let i = 0; i < array.length; i++) {
-    if(array[i] > 0) {
+    if (array[i] > 0) {
       invert.push(array[i] - (array[i] * 2));
     }
-    if(array[i] < 0) {
+    if (array[i] < 0) {
       invert.push(Math.abs(array[i]));
     }
     if (array[i] == 0) {
       invert.push(-0);
     }
   }
-   return invert;
+  return invert;
 }
 
 // ternary operator practice 
 
-function saleHotdogs(n){
-  return n < 5 ? n*100 : n>= 5 && n<10 ? n*95 : n*90
+function saleHotdogs(n) {
+  return n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90
 }
 
 //find sum of all numbers from 1 to n
 
 var summation = function (num) {
   let sum = 0;
-  for (let i = 0; i <= num; i++){
+  for (let i = 0; i <= num; i++) {
     sum += i;
   }
   return sum;
@@ -312,12 +312,12 @@ function removeExclamationMarks(s) {
   return s.replace(/!/gi, '');
 }
 
-var min = function(list){
+var min = function (list) {
   let minVal = Math.min(...list);
-return minVal;
+  return minVal;
 }
 
-var max = function(list){
+var max = function (list) {
   let maxVal = Math.max(...list)
   return maxVal;
 }
@@ -325,14 +325,14 @@ var max = function(list){
 //debug
 function mystery() {
   var results =
-    {sanity: 'Hello'};
+    { sanity: 'Hello' };
   return results;
 }
 
 //function to square argument
 
-function square(n){
-  return n*n;
+function square(n) {
+  return n * n;
 }
 
 //function to break up camel case
@@ -343,3 +343,7 @@ function solution(string) {
 //[A-Z]/g is to search for characters A-Z and g is the global identifier - finds all matches not just the first.
 //$1 is used to access the captured value.
 //the ' ' ensures a space is added.
+
+function litres(time) {
+  return Math.floor(Number(time / 2));
+}
