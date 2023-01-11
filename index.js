@@ -347,3 +347,9 @@ function solution(string) {
 function litres(time) {
   return Math.floor(Number(time / 2));
 }
+
+//Given integer or a floating-point number, find its opposite.
+
+function opposite(number) {
+  return(-number);
+}
