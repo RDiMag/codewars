@@ -353,3 +353,9 @@ function litres(time) {
 function opposite(number) {
   return(-number);
 }
+
+//Complete the solution so that it reverses the string passed into it. 
+
+function solution(str){
+  return str.split('').reverse().join('');  
+}
