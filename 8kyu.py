@@ -45,3 +45,11 @@ def get_real_floor(n):
         return n-1;
     else:
         return n;
+
+#check for palindromes. Uppercase vs. lowercase can throw errors if unaddressed.
+
+def is_palindrome(s):
+    if (s.lower() == s.lower()[::-1]):
+        return True;
+    else:
+        return False;
